@@ -1,4 +1,3 @@
-// src/components/Navbar.jsx
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import logo from '../assets/image/Logo.png';
@@ -31,7 +30,7 @@ const Navbar = () => {
           <div className="navbar-nav ms-auto text-center gap-lg-4 gap-3 mt-3 mt-lg-0">
             <NavLink to="/" className="nav-link" end onClick={() => setIsCollapsed(true)}>Home</NavLink>
             <NavLink to="/references" className="nav-link" onClick={() => setIsCollapsed(true)}>References</NavLink>
-            <NavLink to="/projects" className="nav-link" onClick={() => setIsCollapsed(true)}>Projects</NavLink>
+            <NavLink to="/products" className="nav-link" onClick={() => setIsCollapsed(true)}>Products</NavLink>
             <NavLink to="/about" className="nav-link" onClick={() => setIsCollapsed(true)}>About</NavLink>
           </div>
         </div>

@@ -1,0 +1,38 @@
+.hero-section {
+  background-color: #fefefe;
+  min-height: 85vh;
+}
+
+.hero-title {
+  font-family: 'Georgia', serif;
+  font-weight: bold;
+  font-size: 2.5rem;
+  color: #111;
+}
+
+.hero-subtext {
+  font-size: 1rem;
+  color: #444;
+  margin-top: 1rem;
+}
+
+.hero-image {
+  border-radius: 10px;
+  max-width: 100%;
+  height: auto;
+}
+
+.scroll-down-icon {
+  font-size: 2rem;
+  color: #111;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(8px);
+  }
+}

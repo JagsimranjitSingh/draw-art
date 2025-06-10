@@ -1,18 +1,35 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import HeroSection from './components/HeroSection';
+import ImageGallery from './components/ImageGallery';
 
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
     <Router>
       <Navbar />
       <Routes>
-        <Route path="/" element={<div>Home Page</div>} />
-        <Route path="/references" element={<div>References Page</div>} />
-        <Route path="/projects" element={<div>Projects Page</div>} />
-        <Route path="/about" element={<div>About Page</div>} />
+        {/* Home Page */}
+        <Route
+          path="/"
+          element={
+            <>
+              <HeroSection />
+              <ImageGallery />
+            </>
+          }
+        />
+
+        {/* References Page */}
+        <Route path="/references" element={<div className="p-4">References Page</div>} />
+
+        {/* Projects Page */}
+        <Route path="/projects" element={<div className="p-4">Projects Page</div>} />
+
+        {/* About Page */}
+        <Route path="/about" element={<div className="p-4">About Page</div>} />
       </Routes>
     </Router>
   );
