@@ -1,0 +1,21 @@
+footer {
+  background-color: #515151; 
+  padding: 2rem 0; 
+  text-align: center; 
+  color: #ffffff;
+}
+
+.icon-hover {
+  color: #ffffff; 
+  margin: 15px; 
+  transition: color 0.3s ease-in-out;
+}
+
+.icon-hover:hover {
+  color: #0dcaf0 !important;
+  transition: color 0.3s ease-in-out;
+}
+
+footer p {
+  margin-top: 0.9rem;
+}
