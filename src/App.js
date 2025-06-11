@@ -3,6 +3,8 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import HeroSection from './components/HeroSection';
 import ImageGallery from './components/ImageGallery';
+import AboutMe from './components/AboutMe';
+import ContactMe from './components/ContactMe';
 import Footer from './components/Footer';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -30,7 +32,15 @@ function App() {
         <Route path="/products" element={<div className="p-4">Products Page</div>} />
 
         {/* About Page */}
-        <Route path="/about" element={<div className="p-4">About Page</div>} />
+        <Route
+          path="/about" 
+          element={
+            <>
+              <AboutMe />
+              <ContactMe />
+            </>
+          }
+        />
       </Routes>
       <Footer />
     </Router>
