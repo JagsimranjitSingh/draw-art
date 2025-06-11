@@ -4,6 +4,7 @@ import Navbar from './components/Navbar';
 import HeroSection from './components/HeroSection';
 import ImageGallery from './components/ImageGallery';
 import RandomImageGenerator from './components/RandomImageGenerator';
+// import ProductSuggestions from './components/ProductSuggestions';
 import AboutMe from './components/AboutMe';
 import ContactMe from './components/ContactMe';
 import Footer from './components/Footer';
@@ -36,7 +37,14 @@ function App() {
               }
             />
             {/* Projects Page */}
-            <Route path="/products" element={<div className="p-4">Products Page</div>} />
+            <Route 
+              path="/products"
+              element={
+                <>
+                  <h2>Product Suggestions</h2>
+                  <p>Comming Soon...</p>
+                </>}
+            />
             {/* About Page */}
             <Route
               path="/about"
