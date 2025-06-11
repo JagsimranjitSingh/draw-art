@@ -3,47 +3,55 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import HeroSection from './components/HeroSection';
 import ImageGallery from './components/ImageGallery';
+import RandomImageGenerator from './components/RandomImageGenerator';
 import AboutMe from './components/AboutMe';
 import ContactMe from './components/ContactMe';
 import Footer from './components/Footer';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
+import './css/App.css';
 
 function App() {
   return (
-    <Router>
-      <Navbar />
-      <Routes>
-        {/* Home Page */}
-        <Route
-          path="/"
-          element={
-            <>
-              <HeroSection />
-              <ImageGallery />
-            </>
-          }
-        />
-
-        {/* References Page */}
-        <Route path="/references" element={<div className="p-4">References Page</div>} />
-
-        {/* Projects Page */}
-        <Route path="/products" element={<div className="p-4">Products Page</div>} />
-
-        {/* About Page */}
-        <Route
-          path="/about" 
-          element={
-            <>
-              <AboutMe />
-              <ContactMe />
-            </>
-          }
-        />
-      </Routes>
-      <Footer />
-    </Router>
+    <div className="app-wrapper">
+      <Router>
+        <Navbar />
+        <div className="content-wrapper">
+          <Routes>
+            {/* Home Page */}
+            <Route
+              path="/"
+              element={
+                <>
+                  <HeroSection />
+                  <ImageGallery />
+                </>
+              }
+            />
+            {/* References Page */}
+            <Route 
+              path="/references"
+              element={
+                <RandomImageGenerator />
+              }
+            />
+            {/* Projects Page */}
+            <Route path="/products" element={<div className="p-4">Products Page</div>} />
+            {/* About Page */}
+            <Route
+              path="/about"
+              element={
+                <>
+                  <AboutMe />
+                  <ContactMe />
+                </>
+              }
+            />
+          </Routes>
+        </div>
+        <Footer />
+      </Router>
+    </div>
   );
 }
 
