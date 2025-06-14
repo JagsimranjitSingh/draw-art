@@ -4,7 +4,7 @@ import Navbar from './components/Navbar';
 import HeroSection from './components/HeroSection';
 import ImageGallery from './components/ImageGallery';
 import RandomImageGenerator from './components/RandomImageGenerator';
-// import ProductSuggestions from './components/ProductSuggestions';
+import ProductSuggestions from './components/ProductSuggestions';
 import AboutMe from './components/AboutMe';
 import ContactMe from './components/ContactMe';
 import Footer from './components/Footer';
@@ -40,10 +40,8 @@ function App() {
             <Route 
               path="/products"
               element={
-                <>
-                  <h2>Product Suggestions</h2>
-                  <p>Comming Soon...</p>
-                </>}
+                <ProductSuggestions />
+              }
             />
             {/* About Page */}
             <Route
