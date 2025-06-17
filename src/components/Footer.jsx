@@ -18,7 +18,7 @@ const Footer = () => {
                             className="mb-3 mb-md-0 me-md-3"
                         />
                         <div>
-                            <p className="mb-1">DrawArt is an platform for generating, showcasing, exploring artistic creations. Ideal for both beginners and experts.</p>
+                            <p className="mb-1">drawArt is an platform for generating, showcasing, exploring artistic creations. Ideal for both beginners and experts.</p>
                         </div>
                     </div>
 
